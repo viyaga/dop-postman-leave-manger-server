@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_leave_availed_leaves",
+  "info": {
+    "displayName": "availed_leave"
+  },
+  "options": {},
+  "attributes": {
+    "cl": {
+      "type": "integer",
+      "default": 0
+    },
+    "rh": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

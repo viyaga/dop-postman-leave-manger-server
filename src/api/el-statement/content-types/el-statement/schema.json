@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "el_statements",
+  "info": {
+    "singularName": "el-statement",
+    "pluralName": "el-statements",
+    "displayName": "el_statements",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "designation": {
+      "type": "string"
+    },
+    "pay": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    },
+    "kind_of_leave": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "period_of_leave": {
+      "type": "component",
+      "repeatable": true,
+      "component": "leave.period"
+    },
+    "substitute_name": {
+      "type": "string",
+      "required": true
+    },
+    "substitute_designation": {
+      "type": "string"
+    },
+    "employee_id": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20
+    },
+    "substitute_emp_id": {
+      "type": "string"
+    },
+    "substitute_office": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "date"
+    },
+    "doa": {
+      "type": "date"
+    },
+    "no_of_days_claim": {
+      "type": "integer",
+      "default": 0
+    },
+    "remarks": {
+      "type": "string"
+    },
+    "work_performed_by_sub": {
+      "type": "component",
+      "repeatable": true,
+      "component": "leave.period"
+    }
+  }
+}

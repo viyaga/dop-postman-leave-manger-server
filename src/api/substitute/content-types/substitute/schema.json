@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "substitutes",
+  "info": {
+    "singularName": "substitute",
+    "pluralName": "substitutes",
+    "displayName": "substitutes",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "designation": {
+      "type": "string",
+      "required": true
+    },
+    "branch_office": {
+      "type": "string"
+    },
+    "sub_office": {
+      "type": "string"
+    },
+    "head_office": {
+      "type": "string"
+    },
+    "date_of_birth": {
+      "type": "date"
+    },
+    "date_of_appointment": {
+      "type": "date"
+    },
+    "employee_id": {
+      "type": "string",
+      "required": true
+    },
+    "substitute_status": {
+      "type": "integer",
+      "default": 1,
+      "required": true
+    }
+  }
+}

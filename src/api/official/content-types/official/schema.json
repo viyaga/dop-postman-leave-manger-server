@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "officials",
+  "info": {
+    "singularName": "official",
+    "pluralName": "officials",
+    "displayName": "officials",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "designation": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "employee_id": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20
+    },
+    "pay": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "official_status": {
+      "type": "integer",
+      "default": 1,
+      "required": true
+    },
+    "leave_balance": {
+      "type": "component",
+      "repeatable": false,
+      "component": "leave.balance"
+    },
+    "office": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::office.office",
+      "inversedBy": "officials"
+    }
+  }
+}

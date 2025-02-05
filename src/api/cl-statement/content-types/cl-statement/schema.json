@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cl_statements",
+  "info": {
+    "singularName": "cl-statement",
+    "pluralName": "cl-statements",
+    "displayName": "cl_statements",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string",
+      "required": true
+    },
+    "kind_of_leave": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "period_of_leave": {
+      "type": "component",
+      "repeatable": false,
+      "component": "leave.period"
+    },
+    "work_performed_by_sub": {
+      "type": "component",
+      "repeatable": false,
+      "component": "leave.period"
+    },
+    "already_availed_leave": {
+      "type": "component",
+      "repeatable": false,
+      "component": "leave.availed-leave"
+    },
+    "substitute_name": {
+      "type": "string",
+      "required": true
+    },
+    "substitute_designation": {
+      "type": "string",
+      "required": true
+    },
+    "substitute_office": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "date"
+    },
+    "community": {
+      "type": "string",
+      "required": true
+    },
+    "balance_leave": {
+      "type": "component",
+      "repeatable": false,
+      "component": "leave.balance"
+    },
+    "remarks": {
+      "type": "string"
+    }
+  }
+}

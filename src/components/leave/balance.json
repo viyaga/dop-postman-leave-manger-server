@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_leave_balances",
+  "info": {
+    "displayName": "balance",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cl": {
+      "type": "integer",
+      "default": 0
+    },
+    "rh": {
+      "type": "integer",
+      "default": 0
+    },
+    "el": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_leave_periods",
+  "info": {
+    "displayName": "period"
+  },
+  "options": {},
+  "attributes": {
+    "from": {
+      "type": "date"
+    },
+    "to": {
+      "type": "date"
+    },
+    "days": {
+      "type": "integer"
+    }
+  }
+}

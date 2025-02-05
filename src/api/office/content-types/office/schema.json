@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "offices",
+  "info": {
+    "singularName": "office",
+    "pluralName": "offices",
+    "displayName": "offices",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "office"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "ho",
+        "so",
+        "bo"
+      ]
+    },
+    "officials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::official.official",
+      "mappedBy": "office"
+    }
+  }
+}
